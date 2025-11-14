@@ -38,36 +38,40 @@
     </div>
   </section>
    <!-- Second Section -->
-  <section class="gallery fade-in">
-    <div class="gallery-container-wrapper">
-      <div class="gallery-header">
+  <section class="discuss fade-in">
+    <!-- replaced gallery-container-wrapper with discuss-container-wrapper -->
+    <div class="discuss-container-wrapper">
+      <!-- replaced gallery-header with discuss-header -->
+      <div class="discuss-header">
         <h2>Intro to Computing</h2>
         <p>Our classroom discussions were fun and easy to follow because Mr. Malubay explained lessons clearly and engagingly. 
-        We especially enjoyed the Computer Lab sessions. Despite some challenging topics, our professor’s explanations helped us understand everything better.</p>
+        We especially enjoyed the Computer Lab sessions. Despite some challenging topics, our professor's explanations helped us understand everything better.</p>
       </div>
-      <div class="gallery-container">
-        <div class="gallery-item">
+      <!-- replaced gallery-container with discuss-container -->
+      <div class="discuss-container">
+        <!-- replaced gallery-item with discuss-item -->
+        <div class="discuss-item">
           <img src="../pic/computing2.png" alt="Computing Image 1" />
           <div class="overlay">
             <h3>Computing System</h3>
             <p>Discussion about different Computing Systems.</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="discuss-item">
           <img src="../pic/computing3png.png" alt="Computing Image 2" />
           <div class="overlay">
             <h3>Adding 2 numbers</h3>
             <p>Sir Malubay discussed how to add two numbers.</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="discuss-item">
           <img src="../pic/computing4.png" alt="Computing Image 3" />
           <div class="overlay">
             <h3>Coding adding 2 numbers</h3>
             <p>Working on coding the addition of two numbers.</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="discuss-item">
           <img src="../pic/computing5.png" alt="Computing Image 4" />
           <div class="overlay">
             <h3>Progress Report</h3>
@@ -89,7 +93,7 @@
     </div>
     <div class="section3-container">
       <div class="section3-left">
-        <div class="card large-card">
+        <div class="hundredqt large-card">
           <img src="../pic/computing11.png" alt="large pic" />
           <div class="card-text large-card-text">
             <h2 class="large-title"><br>With our Prof.</h2>
@@ -98,13 +102,13 @@
         </div>
       </div>
       <div class="section3-right">
-        <div class="card small-card top">
+        <div class="hundredqt small-card top">
           <img src="../pic/computing14.png" alt="small pic 1" />
           <div class="overlay">
             <div class="overlay-text">KWATRO CUTIE</div>
           </div>
         </div>
-        <div class="card small-card bottom">
+        <div class="hundredqt small-card bottom">
           <img src="../pic/computing7.png" alt="small pic 2" />
           <div class="overlay">
             <div class="overlay-text">100 CUTIE</div>
@@ -125,10 +129,10 @@
 
     <!-- Javascript -->
 <script>
-  // 🌟 Smooth scrolling for the entire document
+  //  Smooth scrolling 
   document.documentElement.style.scrollBehavior = 'smooth';
 
-  // ✨ Intersection Observer for fade-in animations
+  //  Intersection Observer 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -144,7 +148,7 @@
     observer.observe(el);
   });
 
-  // 🖼️ Parallax effect
+  //  Parallax effect
   const fullPageSection = document.querySelector('.full-page-section');
   const fullPageImage = document.querySelector('.full-page-image');
 
@@ -160,44 +164,14 @@
     });
   }
 
-  // 🎞️ Staggered animation 
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  galleryItems.forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.1}s`;
-    item.style.opacity = '0';
-    item.style.animation = `fadeInScale 0.6s ease-out ${index * 0.1}s forwards`;
-  });
-
-  // 🧠 Hover effect for cards 
-  const cards = document.querySelectorAll('#section4 .card');
-  cards.forEach((card) => {
-    card.addEventListener('mouseenter', function () {
-      this.style.transform = 'translateY(-8px) scale(1.02)';
-      this.style.boxShadow = '0 12px 25px rgba(0, 0, 0, 0.35)';
-      this.style.transition = 'all 0.3s ease';
-    });
-    card.addEventListener('mouseleave', function () {
-      this.style.transform = 'translateY(0) scale(1)';
-      this.style.boxShadow = '6px 6px 12px rgba(0,0,0,0.18)';
-    });
-  });
-
-  // 💫 Page fade-out to another HTML file
+  // Page navigation
   document.querySelectorAll('a[href$=".html"]').forEach((link) => {
     link.addEventListener('click', function (e) {
       const url = this.getAttribute('href');
       if (url.startsWith('#')) return; 
       e.preventDefault();
-      document.body.classList.add('fade-out');
-      setTimeout(() => {
-        window.location.href = url;
-      }, 600); 
+      window.location.href = url;
     });
-  });
-
-  // 🌅 Add fade-in when page finishes loading
-  window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('fade-in-start');
   });
 </script>
 </body>
