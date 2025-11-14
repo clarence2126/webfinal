@@ -162,7 +162,7 @@ nav a {
 
 .picture-container {
   display: grid;
-  grid-template-columns: repeat(2, 750px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   background-color: transparent;
   padding: 60px;
@@ -176,7 +176,7 @@ nav a {
 .picture-box {
   background-color: transparent;
   border-radius: 25px;
-  width: 750px;
+  width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -233,7 +233,6 @@ nav a {
   background-color: transparent;
   padding: 80px 20px;
   box-sizing: border-box;
-  position: center;
 }
 
 .layout-container {
@@ -249,7 +248,6 @@ nav a {
   width: 100%;
   max-width: 1600px;
   box-sizing: border-box;
-  position: center;
 }
 
 .layout-left {
@@ -257,7 +255,6 @@ nav a {
   flex-direction: column;
   gap: 25px;
   align-items: center;
-  position: center;
 }
 
 .layout-box {
@@ -266,7 +263,6 @@ nav a {
   width: 700px;
   height: 400px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  position: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -277,7 +273,6 @@ nav a {
   object-fit: cover;
   border-radius: 25px;
   transition: transform 0.4s ease;
-  position: center;
 }
 
 .layout-box:hover img {
@@ -360,145 +355,7 @@ nav a {
   font-weight: 600;
 }
 
-/* Responsive design */
-
-/* for big phones */
-@media (min-width: 375px) and (max-width: 479px) {
-  body {
-    padding-top: 80px;
-    overflow-x: hidden;
-  }
-
-  .topnav {
-    padding: 8px 12px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    flex: 1;
-    min-width: 150px;
-  }
-
-  .logo img {
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-  }
-
-  .logo h1 {
-    font-size: 12px;
-  }
-
-  nav {
-    gap: 8px;
-    order: 3;
-    width: 100%;
-  }
-
-  nav a {
-    font-size: 11px;
-    margin: 0 8px;
-  }
-
-  .subnav {
-    position: static;
-    transform: none;
-    padding: 6px 8px;
-    gap: 6px;
-    margin-top: 6px;
-    width: 100%;
-    top: auto;
-    left: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 30px;
-  }
-
-  .subnav a {
-    font-size: 10px;
-    padding: 4px 6px;
-    white-space: nowrap;
-  }
-
-  .purposive-box {
-    max-width: 98%;
-  }
-
-  .purposive-image {
-    height: 400px;
-  }
-
-  .purposive-text h1 {
-    font-size: 40px;
-  }
-
-  .purposive-text p {
-    font-size: 16px;
-  }
-
-  .picture-header {
-    padding: 0 10px;
-  }
-
-  .picture-header h2 {
-    font-size: 28px;
-  }
-
-  .picture-header p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .picture-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px 10px;
-    max-width: 100%;
-  }
-
-  .picture-box {
-    width: 100%;
-    height: 250px;
-  }
-
-  .layout-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-    max-width: 100%;
-  }
-
-  .layout-box,
-  .layout-box.large {
-    width: 100%;
-    max-width: 350px;
-    height: 250px;
-  }
-
-  .layout-header {
-    padding: 0 10px;
-  }
-
-  .layout-header h2 {
-    font-size: 28px;
-  }
-
-  .layout-header p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .full-page-text h1 {
-    font-size: 36px;
-  }
-
-  .full-page-text p {
-    font-size: 15px;
-    padding: 0 15px;
-    line-height: 1.4;
-  }
-}
+/* Responsive Design*/
 
 /* Small phones */
 @media (max-width: 374px) {
@@ -559,6 +416,11 @@ nav a {
     white-space: nowrap;
   }
 
+  .purposive-section {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
   .purposive-box {
     max-width: 98%;
   }
@@ -607,8 +469,7 @@ nav a {
     max-width: 100%;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 100%;
     max-width: 280px;
     height: 220px;
@@ -638,7 +499,149 @@ nav a {
   }
 }
 
-/* Tablets medium */
+/* Big phones */
+@media (min-width: 375px) and (max-width: 479px) {
+  body {
+    padding-top: 80px;
+    overflow-x: hidden;
+  }
+
+  .topnav {
+    padding: 8px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .logo h1 {
+    font-size: 12px;
+  }
+
+  nav {
+    gap: 8px;
+    order: 3;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 11px;
+    margin: 0 8px;
+  }
+
+  .subnav {
+    position: static;
+    transform: none;
+    padding: 6px 8px;
+    gap: 6px;
+    margin-top: 6px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
+  }
+
+  .subnav a {
+    font-size: 10px;
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+
+  .purposive-section {
+    margin-top: 110px;
+    margin-bottom: 50px;
+  }
+
+  .purposive-box {
+    max-width: 98%;
+  }
+
+  .purposive-image {
+    height: 400px;
+  }
+
+  .purposive-text h1 {
+    font-size: 40px;
+  }
+
+  .purposive-text p {
+    font-size: 16px;
+  }
+
+  .picture-header {
+    padding: 0 10px;
+  }
+
+  .picture-header h2 {
+    font-size: 28px;
+  }
+
+  .picture-header p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .picture-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .picture-box {
+    width: 100%;
+    height: 250px;
+  }
+
+  .layout-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .layout-box {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .layout-header {
+    padding: 0 10px;
+  }
+
+  .layout-header h2 {
+    font-size: 28px;
+  }
+
+  .layout-header p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .full-page-text h1 {
+    font-size: 36px;
+  }
+
+  .full-page-text p {
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 1.4;
+  }
+}
+
+/* Tablets */
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 90px;
@@ -667,11 +670,20 @@ nav a {
     padding: 8px 15px;
     width: auto;
     position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    flex-wrap: wrap;
   }
 
   .subnav a {
     font-size: 11px;
     padding: 5px 8px;
+  }
+
+  .purposive-section {
+    margin-top: 100px;
+    margin-bottom: 60px;
   }
 
   .purposive-box {
@@ -721,8 +733,7 @@ nav a {
     max-width: 100%;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 100%;
     max-width: 450px;
     height: 350px;
@@ -750,7 +761,7 @@ nav a {
   }
 }
 
-/* Big tablets */
+/* Large tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .purposive-text h1 {
     font-size: 70px;
@@ -790,13 +801,16 @@ nav a {
     font-size: 22px;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 650px;
   }
 
-  .layout-box.large {
-    height: 700px;
+  .full-page-text h1 {
+    font-size: 56px;
+  }
+
+  .full-page-text p {
+    font-size: 20px;
   }
 }
 
@@ -852,17 +866,20 @@ nav a {
     font-size: 20px;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 700px;
   }
 
-  .layout-box.large {
-    height: 800px;
+  .full-page-text h1 {
+    font-size: 43px;
+  }
+
+  .full-page-text p {
+    font-size: 20px;
   }
 }
 
-/* Big desktops */
+/* Big desktop */
 @media (min-width: 1201px) and (max-width: 1600px) {
   .topnav {
     padding: 12px 50px;
@@ -914,13 +931,16 @@ nav a {
     font-size: 22px;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 750px;
   }
 
-  .layout-box.large {
-    height: 850px;
+  .full-page-text h1 {
+    font-size: 48px;
+  }
+
+  .full-page-text p {
+    font-size: 22px;
   }
 }
 
@@ -976,67 +996,15 @@ nav a {
     font-size: 24px;
   }
 
-  .layout-box,
-  .layout-box.large {
+  .layout-box {
     width: 850px;
   }
 
-  .layout-box.large {
-    height: 900px;
-  }
-}
-
-/* MacBook Air 11-inch  */
-@media (min-width: 1200px) and (max-width: 1400px) and (max-height: 800px) {
-  .purposive-image {
-    height: 500px;
-  }
-
-  .purposive-text h1 {
-    font-size: 60px;
-  }
-
-  .purposive-text p {
-    font-size: 20px;
-  }
-
-  .picture-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 40px;
-  }
-
-  .picture-box {
-    width: 100%;
-    height: 300px;
-  }
-
-  .picture-header h2 {
-    font-size: 40px;
-  }
-
-  .picture-header p {
-    font-size: 16px;
-  }
-
-  .layout-header h2 {
-    font-size: 40px;
-  }
-
-  .layout-header p {
-    font-size: 16px;
-  }
-
-  .layout-box {
-    width: 550px;
-    height: 350px;
-  }
-
   .full-page-text h1 {
-    font-size: 28px;
+    font-size: 56px;
   }
 
   .full-page-text p {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
