@@ -431,7 +431,7 @@ nav a {
 
 /* Responsive Design */
 
-/* Small phones - 320px to 479px portrait */
+/* Small phones */
 @media (max-width: 479px) and (orientation: portrait) {
   body {
     padding-top: 70px;
@@ -551,7 +551,7 @@ nav a {
   }
 }
 
-/* Big phones - 375px to 479px */
+/* Big phones */
 @media (min-width: 375px) and (max-width: 479px) {
   body {
     padding-top: 80px;
@@ -665,7 +665,7 @@ nav a {
   }
 }
 
-/* Small phones landscape */
+/* Small phones */
 @media (max-width: 767px) and (orientation: landscape) {
   body {
     padding-top: 60px;
@@ -765,7 +765,7 @@ nav a {
   }
 }
 
-/* Tablets - 480px to 768px */
+/* Tablets */
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 90px;
@@ -873,7 +873,7 @@ nav a {
   }
 }
 
-/* Large tablets - 769px to 1024px */
+/* Large tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .nstp-text h2 {
     font-size: 110px;
@@ -924,7 +924,7 @@ nav a {
   }
 }
 
-/* Desktop - 1025px to 1366px */
+/* Desktop */
 @media (min-width: 1025px) and (max-width: 1366px) {
   .topnav {
     padding: 10px 30px;
@@ -1002,12 +1002,12 @@ nav a {
   }
 
   .picture {
-    width: 90%;
-    max-width: 1000px;
+    width: 85%;
+    max-width: 900px;
   }
 
   .picture .nstp-activity-image {
-    height: 400px;
+    height: 350px;
   }
 
   .full-page-text h1 {
@@ -1019,7 +1019,7 @@ nav a {
   }
 }
 
-/* Desktop - 1367px to 1600px */
+/* Desktop */
 @media (min-width: 1367px) and (max-width: 1600px) {
   .topnav {
     padding: 10px 30px;
@@ -1102,7 +1102,7 @@ nav a {
   }
 }
 
-/* Big desktop - 1601px to 1800px */
+/* Big desktop */
 @media (min-width: 1601px) and (max-width: 1800px) {
   .topnav {
     padding: 12px 50px;
@@ -1174,7 +1174,7 @@ nav a {
   }
 }
 
-/* Large laptops - 1801px and above */
+/* Large laptops */
 @media (min-width: 1801px) {
   .topnav {
     padding: 12px 60px;
