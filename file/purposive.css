@@ -321,7 +321,7 @@ nav a {
 
 .full-page-text {
   position: absolute;
-  top: 7%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
