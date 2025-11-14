@@ -59,17 +59,19 @@
     </div>
   </section>
 
- <!-- Third Section -->
+<!-- Third Section -->
 <section class="video-section">
+
   <!-- First video -->
   <div class="video-container">
-    <div class="video-box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/pOSN7OahnQ0?si=ah8oHF03tMI5QxrI" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-box video-wrapper" data-video="https://www.youtube.com/embed/pOSN7OahnQ0?autoplay=1">
+      <div class="thumbnail-overlay">
+        <img src="https://img.youtube.com/vi/pOSN7OahnQ0/maxresdefault.jpg" class="video-thumb">
+        <div class="play-button"></div>
+      </div>
     </div>
     <div class="video-text">
-      <h3>Bravery Lights the Way </h3>
+      <h3>Bravery Lights the Way</h3>
       <p>
       Our spoken poetry reflects our journey as Tamaraws. Through it, we honor our founder's call to be brave, uphold truth and excellence, 
       and stand united as future-ready students, proudly carrying the green and gold.
@@ -78,10 +80,11 @@
   </div>
   <!-- Second video -->
   <div class="video-container reverse">
-    <div class="video-box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/TjfFVrtrBw0?si=FxEYAebjIxAwXT8H" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    <div class="video-box video-wrapper" data-video="https://www.youtube.com/embed/TjfFVrtrBw0?autoplay=1">
+      <div class="thumbnail-overlay">
+        <img src="https://img.youtube.com/vi/TjfFVrtrBw0/maxresdefault.jpg" class="video-thumb">
+        <div class="play-button"></div>
+      </div>
     </div>
     <div class="video-text">
       <h3>Rising Tammaraw</h3>
@@ -119,6 +122,16 @@
 
   <!-- Javascript -->
   <script>
+document.querySelectorAll(".video-wrapper").forEach(box => {
+  box.addEventListener("click", function () {
+    const videoURL = this.getAttribute("data-video");
+    this.innerHTML = `
+      <iframe width="560" height="315" 
+      src="${videoURL}" 
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    `;
+  });
+});
     // Parallax effect for the full-page image
     const fullPageSection = document.querySelector('.full-page-section');
     const fullPageImage = document.querySelector('.full-page-image');
