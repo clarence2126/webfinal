@@ -138,7 +138,7 @@ nav a {
 }
 
 /* Second Section */
-.gallery {
+.discuss {
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ nav a {
   padding: 60px 20px;
 }
 
-.gallery-container {
+.discuss-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -158,7 +158,7 @@ nav a {
   justify-content: center;
 }
 
-.gallery-item {
+.discuss-item {
   background-color: transparent;
   width: 400px;
   height: 400px;
@@ -173,32 +173,32 @@ nav a {
   cursor: pointer;
 }
 
-.gallery-item img {
+.discuss-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gallery-item:hover {
+.discuss-item:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
-.gallery-container-wrapper {
+.discuss-container-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.gallery-header {
+.discuss-header {
   text-align: center;
   margin-bottom: 18px;
   max-width: 1200px;
   padding: 0 20px;
 }
 
-.gallery-header h2 {
+.discuss-header h2 {
   margin: 0;
   font-size: 50px;
   letter-spacing: 2px;
@@ -206,14 +206,14 @@ nav a {
   font-weight: 800;
 }
 
-.gallery-header p {
+.discuss-header p {
   margin: 8px 0 0;
   font-size: 25px;
   color: #f9e8c9;
   opacity: 0.95;
 }
 
-.gallery-item .overlay {
+.discuss-item .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -232,18 +232,18 @@ nav a {
   z-index: 2;
 }
 
-.gallery-item:hover .overlay {
+.discuss-item:hover .overlay {
   opacity: 1;
 }
 
-.gallery-item .overlay h3 {
+.discuss-item .overlay h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
 
-.gallery-item .overlay p {
+.discuss-item .overlay p {
   font-size: 14px;
   line-height: 1.4;
   max-width: 90%;
@@ -358,6 +358,32 @@ nav a {
   padding: 10px;
 }
 
+#section3 .hundredqt {
+  position: relative;
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.28s ease;
+}
+
+#section3 .hundredqt:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+#section3 .hundredqt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  z-index: 1;
+}
+
 #section3 .large-card .large-card-text {
   position: absolute;
   top: 36px;
@@ -467,8 +493,6 @@ body {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Comprehensive responsive breakpoints with precise screen size management */
-
 /* Small phones - 320px to 374px */
 @media (max-width: 374px) {
   body {
@@ -542,21 +566,21 @@ body {
     font-size: 12px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 22px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 11px;
   }
 
-  .gallery-container {
+  .discuss-container {
     flex-wrap: wrap;
     padding: 10px;
     gap: 8px;
   }
 
-  .gallery-item {
+  .discuss-item {
     width: 100%;
     max-width: 250px;
     height: 120px;
@@ -583,6 +607,10 @@ body {
     height: 170px;
   }
 
+  #section3 .hundredqt {
+    height: 170px;
+  }
+
   #section3 .large-card .large-title {
     font-size: 22px;
   }
@@ -600,7 +628,7 @@ body {
   }
 }
 
-/* Big phones - 375px to 479px */
+/* Big phones */
 @media (min-width: 375px) and (max-width: 479px) {
   body {
     padding-top: 80px;
@@ -672,21 +700,21 @@ body {
     font-size: 14px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 28px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 14px;
   }
 
-  .gallery-container {
+  .discuss-container {
     flex-wrap: wrap;
     padding: 15px;
     gap: 12px;
   }
 
-  .gallery-item {
+  .discuss-item {
     width: 100%;
     max-width: 280px;
     height: 140px;
@@ -713,6 +741,10 @@ body {
     height: 200px;
   }
 
+  #section3 .hundredqt {
+    height: 200px;
+  }
+
   #section3 .large-card .large-title {
     font-size: 28px;
   }
@@ -730,7 +762,7 @@ body {
   }
 }
 
-/* Tablets - 480px to 768px */
+/* Tablets */
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 90px;
@@ -790,21 +822,21 @@ body {
     font-size: 18px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 36px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 16px;
   }
 
-  .gallery-container {
+  .discuss-container {
     flex-wrap: wrap;
     padding: 30px;
     gap: 20px;
   }
 
-  .gallery-item {
+  .discuss-item {
     width: 100%;
     max-width: 300px;
     height: 240px;
@@ -826,6 +858,10 @@ body {
     height: 300px;
   }
 
+  #section3 .hundredqt {
+    height: 300px;
+  }
+
   #section3 .section3-header h1 {
     font-size: 36px;
   }
@@ -843,7 +879,7 @@ body {
   }
 }
 
-/* Large tablets - 769px to 1024px */
+/* Large tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .topnav {
     padding: 10px 30px;
@@ -883,15 +919,15 @@ body {
     font-size: 22px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 42px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 18px;
   }
 
-  .gallery-item {
+  .discuss-item {
     width: 340px;
     height: 270px;
   }
@@ -916,6 +952,10 @@ body {
     height: 400px;
   }
 
+  #section3 .hundredqt {
+    height: 400px;
+  }
+
   #section3 .large-card .large-title {
     font-size: 52px;
   }
@@ -933,7 +973,7 @@ body {
   }
 }
 
-/* Desktop - 1025px to 1200px */
+/* Desktop */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .topnav {
     padding: 10px 30px;
@@ -969,11 +1009,11 @@ body {
     font-size: 25px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 48px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 20px;
   }
 
@@ -994,7 +1034,7 @@ body {
   }
 }
 
-/* Big desktop - 1201px to 1600px */
+/* Big desktop */
 @media (min-width: 1201px) and (max-width: 1600px) {
   .topnav {
     padding: 12px 50px;
@@ -1030,11 +1070,11 @@ body {
     font-size: 28px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 52px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 22px;
   }
 
@@ -1045,9 +1085,17 @@ body {
   #section3 .section3-header p {
     font-size: 22px;
   }
+
+  .full-page-text h1 {
+    font-size: 43px;
+  }
+
+  .full-page-text p {
+    font-size: 20px;
+  }
 }
 
-/* Large laptops - 1601px and above */
+/* Large laptops */
 @media (min-width: 1601px) {
   .topnav {
     padding: 12px 60px;
@@ -1083,11 +1131,11 @@ body {
     font-size: 30px;
   }
 
-  .gallery-header h2 {
+  .discuss-header h2 {
     font-size: 56px;
   }
 
-  .gallery-header p {
+  .discuss-header p {
     font-size: 24px;
   }
 
