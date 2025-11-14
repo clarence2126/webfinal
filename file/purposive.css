@@ -154,7 +154,6 @@ nav a {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
-  clear: both;
   flex-wrap: wrap;
   padding: 0 20px;
   box-sizing: border-box;
@@ -164,7 +163,6 @@ nav a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  background-color: transparent;
   padding: 60px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -174,7 +172,6 @@ nav a {
 }
 
 .picture-box {
-  background-color: transparent;
   border-radius: 25px;
   width: 100%;
   height: 400px;
@@ -207,7 +204,6 @@ nav a {
 .picture-header {
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 0%;
 }
 
 .picture-header h2 {
@@ -215,33 +211,29 @@ nav a {
   font-weight: 800;
   margin-bottom: 10px;
   color: #f9e8c9;
-  margin-top: 0%;
 }
 
 .picture-header p {
   font-size: 25px;
   color: #f9e8c9;
-  margin-top: 0%;
 }
 
 /* 3rd Section */
-.layout-grid {
+.moment-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   padding: 80px 20px;
   box-sizing: border-box;
 }
 
-.layout-container {
+.moment-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background-color: transparent;
   border-radius: 25px;
   padding: 50px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -250,15 +242,14 @@ nav a {
   box-sizing: border-box;
 }
 
-.layout-left {
+.moment-left {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
 }
 
-.layout-box {
-  background-color: transparent;
+.moment-box {
   border-radius: 25px;
   width: 700px;
   height: 400px;
@@ -267,7 +258,7 @@ nav a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.layout-box img {
+.moment-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -275,33 +266,30 @@ nav a {
   transition: transform 0.4s ease;
 }
 
-.layout-box:hover img {
+.moment-box:hover img {
   transform: scale(1.05);
 }
 
-.layout-box:hover {
+.moment-box:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.layout-header {
+.moment-header {
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 0%;
 }
 
-.layout-header h2 {
+.moment-header h2 {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 10px;
   color: #f9e8c9;
-  margin-top: 0%;
 }
 
-.layout-header p {
+.moment-header p {
   font-size: 25px;
   color: #f9e8c9;
-  margin-top: 0%;
 }
 
 /* Last Section  */
@@ -355,7 +343,7 @@ nav a {
   font-weight: 600;
 }
 
-/* Responsive Design*/
+/* Responsive Design */
 
 /* Small phones */
 @media (max-width: 374px) {
@@ -462,28 +450,28 @@ nav a {
     height: 220px;
   }
 
-  .layout-container {
+  .moment-container {
     flex-direction: column;
     align-items: center;
     padding: 15px 8px;
     max-width: 100%;
   }
 
-  .layout-box {
+  .moment-box {
     width: 100%;
     max-width: 280px;
     height: 220px;
   }
 
-  .layout-header {
+  .moment-header {
     padding: 0 8px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 24px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 12px;
     line-height: 1.3;
   }
@@ -604,28 +592,28 @@ nav a {
     height: 250px;
   }
 
-  .layout-container {
+  .moment-container {
     flex-direction: column;
     align-items: center;
     padding: 20px 10px;
     max-width: 100%;
   }
 
-  .layout-box {
+  .moment-box {
     width: 100%;
     max-width: 350px;
     height: 250px;
   }
 
-  .layout-header {
+  .moment-header {
     padding: 0 10px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 28px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 14px;
     line-height: 1.4;
   }
@@ -726,28 +714,28 @@ nav a {
     height: 320px;
   }
 
-  .layout-container {
+  .moment-container {
     flex-direction: column;
     align-items: center;
     padding: 30px 15px;
     max-width: 100%;
   }
 
-  .layout-box {
+  .moment-box {
     width: 100%;
     max-width: 450px;
     height: 350px;
   }
 
-  .layout-header {
+  .moment-header {
     padding: 0 15px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 36px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 16px;
   }
 
@@ -786,22 +774,22 @@ nav a {
     font-size: 22px;
   }
 
-  .layout-container {
+  .moment-container {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
     max-width: 100%;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 44px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 22px;
   }
 
-  .layout-box {
+  .moment-box {
     width: 650px;
   }
 
@@ -858,15 +846,15 @@ nav a {
     font-size: 20px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 48px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 20px;
   }
 
-  .layout-box {
+  .moment-box {
     width: 700px;
   }
 
@@ -923,15 +911,15 @@ nav a {
     font-size: 22px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 52px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 22px;
   }
 
-  .layout-box {
+  .moment-box {
     width: 750px;
   }
 
@@ -988,15 +976,15 @@ nav a {
     font-size: 24px;
   }
 
-  .layout-header h2 {
+  .moment-header h2 {
     font-size: 56px;
   }
 
-  .layout-header p {
+  .moment-header p {
     font-size: 24px;
   }
 
-  .layout-box {
+  .moment-box {
     width: 850px;
   }
 
