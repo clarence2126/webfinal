@@ -108,6 +108,8 @@ nav a {
   transform: scale(1.05);
 }
 
+/* first section */
+
 .backg {
   position: relative;
   text-align: center;
@@ -132,6 +134,8 @@ nav a {
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
+
+/* second section */
 
 .gallery {
   display: flex;
@@ -195,6 +199,8 @@ nav a {
   background: #006400;
 }
 
+/* third section */
+
 .love-fullscreen {
   min-height: 100vh;
   display: flex;
@@ -227,7 +233,7 @@ nav a {
 }
 
 .love-content h1 {
-  font-size: 64px;
+  font-size: 80px;
   color: #ffd700;
   font-weight: 900;
   margin-bottom: 30px;
@@ -237,7 +243,8 @@ nav a {
 }
 
 .love-content p {
-  font-size: 15px;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 1.8;
   color: #f9e8c9;
 }
@@ -247,7 +254,7 @@ nav a {
   margin: 80px 0 60px 0;
   animation: fadeIn 1s ease-in-out;
   font-family: "Poppins", sans-serif;
-  font-size: 64px;
+  font-size: 80px;
   font-weight: 900;
   color: #ffd700;
   letter-spacing: 1px;
@@ -263,7 +270,7 @@ nav a {
 .love-bottom h2 {
   font-family: "Poppins", sans-serif;
   color: #ffd700;
-  font-size: 64px;
+  font-size: 80px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
   font-weight: 900;
@@ -273,12 +280,14 @@ nav a {
 .love-bottom p {
   font-family: "Poppins", sans-serif;
   color: #f9e8c9;
-  font-size: 22px;
+  font-size: 24px;
   max-width: 850px;
   margin: 0 auto 70px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
 }
+
+/* fourth section */
 
 .moments {
   display: flex;
@@ -389,6 +398,8 @@ nav a {
   transform: translate(-50%, -5px);
 }
 
+/* fifth section */
+
 .orientation {
   padding: 80px 40px;
   text-align: center;
@@ -396,7 +407,7 @@ nav a {
 }
 
 .orientation h2 {
-  font-family: "Poppins, sans-serif";
+  font-family: "Poppins", sans-serif;
   font-size: 80px;
   margin-bottom: 20px;
   color: #ffd700;
@@ -407,14 +418,14 @@ nav a {
 }
 
 .orientation p {
-  font-family: "Poppins, sans-serif";
+  font-family: "Poppins", sans-serif;
   color: #f9e8c9;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 60px;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .orientation-grid-container {
@@ -459,6 +470,8 @@ nav a {
   transform: scale(1.1);
 }
 
+/* sixth section */
+
 .events-section {
   background-color: transparent;
   color: white;
@@ -468,8 +481,8 @@ nav a {
 }
 
 .events-section h2 {
-  font-family: "poppins, sans-serif";
-  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
   margin-bottom: 40px;
   color: #ffd700;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
@@ -480,12 +493,12 @@ nav a {
 .events-section p {
   font-family: "Poppins", sans-serif;
   color: #f9e8c9;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 60px;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .events-carsel {
