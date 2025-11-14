@@ -107,7 +107,7 @@ nav a {
 }
 
 .pathfit-text {
-   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   bottom: 80%;
@@ -648,7 +648,7 @@ nav a {
 }
 
 /* Big phones */
-@media (min-width: 375px) and (max-width: 479px) and (orientation: landscape) {
+@media (min-width: 375px) and (max-width: 813px) and (orientation: landscape) {
   body {
     padding-top: 60px;
   }
@@ -692,7 +692,7 @@ nav a {
   }
 }
 
-/* Tablets medium */
+/* Tablets */
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 90px;
@@ -796,7 +796,7 @@ nav a {
   }
 }
 
-/* Big tablets */
+/* Large tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .topnav {
     padding: 10px 35px;
@@ -871,7 +871,7 @@ nav a {
   }
 }
 
-/* Desktop  */
+/* Desktop */
 @media (min-width: 1025px) and (max-width: 1366px) {
   .topnav {
     padding: 10px 28px;
@@ -1007,7 +1007,7 @@ nav a {
   }
 }
 
-/* Big desktops */
+/* Big desktop */
 @media (min-width: 1201px) and (max-width: 1600px) {
   .topnav {
     padding: 12px 50px;
@@ -1060,7 +1060,7 @@ nav a {
   }
 }
 
-/* Large laptops */
+/* Large laptops - 1601px and above */
 @media (min-width: 1601px) {
   .topnav {
     padding: 12px 60px;
